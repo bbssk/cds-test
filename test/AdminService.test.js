@@ -6,10 +6,11 @@ defaults.auth = { username: 'alice', password: '' }
 describe('AdminService OData APIs', () => {
 
   it('serves AdminService.Authors', async () => {
-    const { data } = await GET `/odata/v4/admin/Authors ${{ params: { $select: 'ID,name' } }}`
+    const { data, status,bhargav } = await GET `/odata/v4/admin/Authors ${{ params: { $select: 'ID,name' } }}`
     expect(data.value).to.containSubset([
       // {"ID":2268953,"name":"name-2268953"},
     ])
+    expect(status).to.equal(200)
   })
 
 })
