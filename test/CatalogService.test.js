@@ -20,7 +20,7 @@ describe('CatalogService OData APIs', () => {
       quantity: 44,
     }}`;
     response = await GET`/odata/v4/catalog/ListOfBooks(251)`;
-    expect(response.data.stock).to.equal(2899);
+    expect(response.data.stock).to.equal(289);
   });
 
   it("should emit event OrderedBook ", async () => {
