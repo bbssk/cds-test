@@ -18,6 +18,14 @@
     "test": "node --test"
   },
   "cds": {
-    "requires": {}
+    "requires": {},
+    "log": {
+      "levels": {
+        "deploy": "silent",
+        "odata": "silent",
+        "cds": "silent",
+        "cds.serve": "silent"
+      }
+    }
   }
 }
