@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "test": "node --test"
+    "test": "node --test",
+    "test:cov": "node --test --experimental-test-coverage --test-coverage-functions=95"
   },
   "cds": {
     "requires": {},
